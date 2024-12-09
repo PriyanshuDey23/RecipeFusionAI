@@ -1,0 +1,15 @@
+streamlit
+google-generativeai
+langchain-google-genai
+youtube-transcript-api
+langchain
+langchain-community
+python-dotenv
+langchain
+requests
+PyMuPDF
+BeautifulSoup4
+requests
+
+
+
