@@ -1,5 +1,7 @@
 # Recipe Fusion AI
 
+![](output.png)
+
 ## Overview
 Recipe Fusion AI is an innovative recipe generation application powered by Google's Generative AI. It allows users to generate recipes based on various input sources, including audio, video, URLs, PDFs, text files, and direct user input. The platform leverages advanced machine learning models to analyze input content and generate personalized recipes, offering a seamless user experience through a simple Streamlit interface.
 

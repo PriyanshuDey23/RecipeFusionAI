@@ -24,7 +24,7 @@ genai.configure(api_key=GOOGLE_API_KEY)
 def generate_recipe(transcript_text, prompt):
     try:
         # Initialize the generative model
-        model = genai.GenerativeModel(model_name="gemini-1.5-flash-8b")
+        model = genai.GenerativeModel(model_name="gemini-2.0-flash")
         
         # Generate content by combining the prompt and the transcript
         response = model.generate_content(prompt + transcript_text)
@@ -60,7 +60,7 @@ def extract_transcript(youtube_video_url):
 def user_generate_recipe(ingredients, dietary_restrictions, cuisine, course_type, meal_duration, calorie_intake, allergies, cooking_method, cooking_equipment, recipe_name, flavor_profile):
     try:
         llm = ChatGoogleGenerativeAI(
-            model="gemini-1.5-pro-002",
+            model="gemini-2.0-flash",
             temperature=1,
             api_key=GOOGLE_API_KEY
         )
@@ -95,7 +95,7 @@ def user_generate_recipe(ingredients, dietary_restrictions, cuisine, course_type
 # Function to initialize the generative model
 def get_model():
     try:
-        model = genai.GenerativeModel(model_name="gemini-1.5-flash-8b")
+        model = genai.GenerativeModel(model_name="gemini-2.0-flash")
         return model
     except Exception as e:
         raise ValueError(f"Error initializing the model: {e}")
